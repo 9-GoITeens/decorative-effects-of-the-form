@@ -16,13 +16,17 @@
 
   <form class="form">
     <div class="form-field">
+      <input type="text" class="form-input" name="name" id="name" placeholder=" " data-placeholder="Іван" />
       <label for="name" class="form-label">І'мя</label>
-      <input type="text" class="form-input" name="name" id="name" />
+      <span class="icon"></span>
+
     </div>
 
     <div class="form-field">
+      <input type="email" class="form-input" name="mail" id="mail" placeholder=" " data-placeholder="fjdlg@kfkgk" />
       <label for="mail" class="form-label">Пошта</label>
-      <input type="email" class="form-input" name="mail" id="mail" />
+      <span class="icon"></span>
+
     </div>
 
     <button type="submit">Залишити заявку</button>
@@ -33,7 +37,7 @@
     document.querySelector('.form-input').addEventListener('focusin', e => {
       e.currentTarget.placeholder = e.currentTarget.dataset.placeholder;
     });
-    document.querySelector('form-inpyt').addEventListener('focusout', e => {
+    document.querySelector('.form-input').addEventListener('focusout', e => {
       e.currentTarget.placeholder = ' ';
     });
   </script> -->

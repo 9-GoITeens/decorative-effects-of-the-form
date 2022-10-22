@@ -5,6 +5,7 @@
 }
 
 .form-field {
+  display: block;
   position: relative;
   margin-bottom: 20px;
 }
@@ -40,3 +41,16 @@
   height: 20px;
   background-color: tomato;
 }
+
+.form-field:focus-within > .icon{
+  background-color: blue;
+}
+
+.form-field:focus-within > .form-label,
+.form-input:not(:placeholder-shown)+.form-label{
+  transform: translateY(-50px);
+}
+
+/* .form-input:not(:placeholder-shown) + .form-label{
+  transform: translateY(-50px);
+} */
